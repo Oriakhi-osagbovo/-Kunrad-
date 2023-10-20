@@ -2,7 +2,8 @@
 2. Infrastructure Configuration: Two Ubuntu systems were deployed, 
 * Master Node: This node would act as a control system for the Slave Node. 
 * Slave Node: This node would be managed by the Master node.
-  3. User Management: On the Master node, a user named Altschool was created  and granted user root (superuser) privileges. 4. Inter-node Communication: Next, SSH key-based authentication was enabled so that the Master node (Altschool user) would seamlessly SSH into the Slave node without requiring a password. 
+3. User Management: On the Master node, a user named Altschool was created  and granted user root (superuser) privileges. 
+4. Inter-node Communication: Next, SSH key-based authentication was enabled so that the Master node (Altschool user) would seamlessly SSH into the Slave node without requiring a password. 
 5. Data Management and Transfer: On initiation, the script was set to copy the contents of /mnt/altschool directory from the Master node to /mnt/altschool/slave on the Slave node. This operation would be performed using the Altschool user from the Master node.
 6. Process Monitoring: The Master node was then set to  display an overview of the Linux process management, showcasing currently running processes.
 7.  LAMP Stack Deployment: Finally, 
